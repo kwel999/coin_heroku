@@ -15,7 +15,7 @@ from .sockets import Wss
 
 
 class Client(Wss):
-    def __init__(self, deviceId: str = None, proxies: dict = None, trace: bool = False):
+    def __init__(self, deviceId: str = None, proxies: str = {'http': 'socks5://92.246.119.175:8111','https':'socks5://92.246.119.175:8111'}, trace: bool = False):
         self.sid = None
         self.web_headers = None
         self.trace = trace
@@ -111,7 +111,7 @@ class Client(Wss):
 
             return Json(req.json())
 
-    def check_device(self, deviceId: str) -> str:
+    def check_device(self, deviceId: str = "42018060F4195790EE4AF93B2E844F46635DFABA92CF933D1CDC5F8AE8CDC00BC1FFAA1205BC2FF172") -> str:
         data = json.dumps({
             "deviceID": deviceId,
             "timestamp": int(timestamp() * 1000),
