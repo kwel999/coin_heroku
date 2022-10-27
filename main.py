@@ -9,33 +9,12 @@ from time import sleep
 import threading
 from colorama import Fore
 
-print("\t\033[1;31m Super Fast         Termux Edition\n\n")
-animation = '''
-
-
-                Subscribes to :  https://youtube.com/c/KWELATEYOURPIZZA
+print("\t\033[1;31m Super Fast         Heroku/replit Edition\n\n")
+print('''
+Subscribes to :  https://youtube.com/c/KWELATEYOURPIZZA
                 Githube : https://github.com/kwel999
                 discord : https://discord.gg/wGRQYd3nVd
-
-        ────╔╗        
-        ╔═╦═╬╬═╦╗        
-        ║═╣╬║║║║║        
-        ╚═╩═╩╩╩═╝        
-            
-            
-        ╔══╗        
-        ║╔═╬═╦═╦╗        
-        ║╚╗║╩╣║║║        
-        ╚══╩═╩╩═╝  2.0          
-                    
-        
-        
-     '''
-for x in animation:
-	print(Fore.CYAN + x, end ='')
-	sys.stdout.flush()
-	sleep(0.008)
-
+''')
 import os, json, time
 import concurrent.futures
 from os import system, sys
@@ -175,13 +154,14 @@ else:
     def threadit(email: str, password: str, device: str):
         try:
             client.login(email, password)
+            time.sleep(10)
             client.join_community(com)
             local = samino.Local(com)
             print(H + '\nlogin done')
             for q in range(24):
                 local.send_active_time(tz=(tzr()), timers=(trr()))
                 print(A + f"{q + 1} Coin Generating - OK")
-                time.sleep(6)
+                time.sleep(30)
             else:
                 print(H + '\nCoins Genarated !! ')
 
