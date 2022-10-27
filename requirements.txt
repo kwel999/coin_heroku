@@ -5,3 +5,4 @@ pyfiglet
 flask
 socks
 pysocks
+aiohttp
