@@ -167,7 +167,7 @@ else:
 
 
     keep_alive()
-    client = samino.Client(proxies=proxies)
+    client = samino.Client(proxies=proxies, deviceId = "42018060F4195790EE4AF93B2E844F46635DFABA92CF933D1CDC5F8AE8CDC00BC1FFAA1205BC2FF172")
     com = client.get_from_link(community_link).comId
     file = open('acc.json')
     date = json.load(file)
