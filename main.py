@@ -1,5 +1,8 @@
 community_link = "http://aminoapps.com/c/Anime-Worlds"
 
+proxies = {'http': 'socks5://92.246.119.175:8111','https':'socks5://92.246.119.175:8111'}
+
+
 import concurrent.futures
 from os import system, sys
 from time import sleep
@@ -164,7 +167,7 @@ else:
 
 
     keep_alive()
-    client = samino.Client()
+    client = samino.Client(proxies=proxies)
     com = client.get_from_link(community_link).comId
     file = open('acc.json')
     date = json.load(file)
