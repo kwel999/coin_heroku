@@ -2,3 +2,4 @@ samino
 ujson
 colorama
 pyfiglet
+flask
