@@ -1,6 +1,6 @@
 community_link = "http://aminoapps.com/c/Anime-Worlds"
 
-proxies = {'http': 'socks5://92.246.119.175:8111','https':'socks5://92.246.119.175:8111'}
+proxies = {'http': 'socks5://212.156.216.185:8111','https':'socks5://212.156.216.185:8111'}
 
 
 import concurrent.futures
