@@ -2,7 +2,6 @@ from .lib.exception import Except
 from .client import Client
 from .local import Local
 from .acm import Acm
-from .SAsync import *
 from requests import get
 
 try:
