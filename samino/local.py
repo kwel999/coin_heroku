@@ -15,7 +15,7 @@ from .lib.objects import *
 
 
 class Local:
-    def __init__(self, comId: str, proxies: str = {'http': 'socks5://92.246.119.175:8111','https':'socks5://92.246.119.175:8111'}):
+    def __init__(self, comId: str, proxies: str = {'HTTP: SOCKSS://65.245.191.193.8111. HTTPS SOCKSS://65.245.191.193:8111'}):
         self.proxies = proxies
         self.comId = comId
         self.uid = headers.uid
